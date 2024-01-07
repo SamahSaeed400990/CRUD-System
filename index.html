@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+     
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-dark">
+    
+
+    
+<div class="mx-auto w-100 rounded  p-5">
+    <div class="w-50 mx-auto">
+      <h1 class="text-center mt-3">Bookmarker</h1>
+    <hr>
+    <p class="text-center"> Bookmark your favorite sites</p>
+    <div>
+      <label for="siteNameInput">  Site Name :</label>
+      <input oninput="validationName();" type="text" name="" id="siteNameInput" class="form-control mt-3">
+    </div>
+    <div>
+      <label class="pt-3" for="siteLinkInput">Site URL :</label>
+      <input oninput="validationLink();" type="url" name="" id="siteLinkInput" class="form-control mt-3">
+    </div>
+
+    <button class="btn btn-primary w-80 mt-5" onclick="addBook(); ">Submit</button>
+    
+    <table class="table my-3">
+      <thead>
+        <tr>
+          <th>Index</th>
+          <th>Website Name</th>
+          <th>Visit</th>
+          <th>Delete</th>
+          
+        </tr>
+      </thead>
+      <tbody id="tableBody" class="table my-3">
+         
+      </tbody>
+    </table>
+    </div>
+</div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
